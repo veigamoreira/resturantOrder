@@ -9,7 +9,7 @@ Arquitetura de microservices é uma forma de se quebrar um serviço ou módulo m
 3) explique qual a diferença entre comunicação sincrona e assincrona e qual o melhor cenário para utilizar uma ou outra.
 
 
-OMUNICAÇÃO DE DADOS ASSÍNCRONA
+COMUNICAÇÃO DE DADOS ASSÍNCRONA
 
 Na Transmissão Assíncrona, um bit especial é inserido no início e no fim da transmissão de um caractere e assim permite que o receptor entenda o que foi realmente transmitido. Imagine uma sequência de dados que precisam ser transmitidos. Cada bloco de dados possui uma flag (espécie de controle) que informa onde começa e onde acaba esse bloco, além da posição na sequência de dados transmitida.
 
