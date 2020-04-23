@@ -11,9 +11,9 @@ namespace Crud.VagnerMoreira.Api.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioAppService _UsuarioAppService;
+        private readonly IOperacaoAppService _UsuarioAppService;
 
-        public UsuarioController(IUsuarioAppService UsuarioAppService)
+        public UsuarioController(IOperacaoAppService UsuarioAppService)
         {
             _UsuarioAppService = UsuarioAppService;
         }

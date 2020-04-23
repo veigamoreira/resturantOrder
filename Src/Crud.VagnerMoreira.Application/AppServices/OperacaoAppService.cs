@@ -12,13 +12,13 @@ namespace Crud.VagnerMoreira.Application.AppServices
     public class OperacaoAppService : IOperacaoAppService
     {
         private readonly IMapper _mapper;
-        private readonly IUsuarioService _UsuarioService;
+        private readonly IOperacaoService _UsuarioService;
         private readonly IUnitOfWork _unitOfWork;
 
-        public OperacaoAppService(IMapper mapper, IUsuarioService UsuarioService, IUnitOfWork unitOfWork)
+        public OperacaoAppService(IMapper mapper, IOperacaoService OperacaoService, IUnitOfWork unitOfWork)
         {
             _mapper = mapper;
-            _UsuarioService = UsuarioService;
+            _UsuarioService = OperacaoService;
             _unitOfWork = unitOfWork;
         }
 
@@ -31,8 +31,8 @@ namespace Crud.VagnerMoreira.Application.AppServices
                 _unitOfWork.BeginTransaction();
 
                 // Faz o mapeamento para a model e chama a service
-                ContaCorrente requestModel = _mapper.Map<ContaCorrente>(request);
-                ContaCorrente responseModel = _UsuarioService.Adicionar(requestModel);
+                Lancamento lancamento = new Lancamento() { ContaDestino = request.ContaDestino, ContaOrigem = request.ContaOrigem, Valor = request.Valor };
+                ContaCorrente responseModel = _UsuarioService.Adicionar(lancamento);
 
                 // Commit ou RollBack
                 if (responseModel.Erros != null && responseModel.Erros.Any())

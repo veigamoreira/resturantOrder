@@ -3,11 +3,11 @@
     public class Lancamento : Base
     {
 
-        public string ContaOrigem { get; private set; }
+        public string ContaOrigem { get; set; }
 
-        public string ContaDestino { get; private set; }
+        public string ContaDestino { get; set; }
 
-        public decimal Valor { get; private set; }
+        public decimal Valor { get; set; }
 
     }
 }

@@ -31,7 +31,7 @@ namespace Crud.VagnerMoreira.Infra.CrossCutting.IoC
             // AppService
             services.AddSingleton<IConfigurationProvider>(AutoMapperConfiguration.RegisterMappings());
             services.AddTransient<IMapper>(x => new Mapper(x.GetRequiredService<IConfigurationProvider>(), x.GetService));
-            services.AddTransient<IUsuarioAppService, OperacaoAppService>();
+            services.AddTransient<IOperacaoAppService, OperacaoAppService>();
         }
     }
 }
