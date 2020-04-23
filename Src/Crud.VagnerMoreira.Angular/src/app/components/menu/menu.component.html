@@ -1,0 +1,37 @@
+<aside id="menuLateral" class="menu-lateral d-print-none" role="navigation"
+   [class.omitir]="compartilhadoService.ocultarMenu">
+
+  <div class="row m-0 mt-4 mb-4" [hidden]="compartilhadoService.ocultarMenu">
+    <div class="col-12 text-center">
+      <img src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg?t=164" alt="Vagner da Veiga Moreira - ME">
+    </div>
+  </div>
+
+  <div class="row m-0 mt-4 mb-4" [hidden]="!compartilhadoService.ocultarMenu">
+    <div class="col-12 p-0 pr-1 text-right" style="height: 43px;">
+      <span class="texto-titulo">WM</span>
+    </div>
+  </div>
+
+  <!-- MENU ABERTO -->
+  <div class="row w-100 m-0 pt-3 nao-selecionavel" id="menu" [hidden]="compartilhadoService.ocultarMenu">
+    <ul class="pl-0" [hidden]="compartilhadoService.ocultarMenu">
+      <ng-template let-subMenu1="true" [ngTemplateOutlet]="submenu" #submenu>
+        <li class="pl-3 link" [routerLink]="['/usuario-consulta']">
+          <a class="link">
+            <fa-icon class="pr-2" [icon]="['fas', 'car']"></fa-icon> usuario
+          </a>
+        </li>
+      </ng-template>
+    </ul>
+
+    <!-- MENU FECHADO
+    <ul class="p-0 text-right" style="width: 50px;" [hidden]="!compartilhadoService.ocultarMenu">
+      <li class="d-flex justify-content-center align-items-center mr-0 rounded-0" title="usuario">
+        <fa-icon class="link" [icon]="['fas', 'car']"></fa-icon>
+      </li>
+    </ul> -->
+  </div>
+
+
+</aside>

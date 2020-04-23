@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crud.VagnerMoreira.Application\Crud.VagnerMoreira.Application.csproj" />
+    <ProjectReference Include="..\Crud.VagnerMoreira.Data.Dapper\Crud.VagnerMoreira.Data.Dapper.csproj" />
+    <ProjectReference Include="..\Crud.VagnerMoreira.Domain\Crud.VagnerMoreira.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

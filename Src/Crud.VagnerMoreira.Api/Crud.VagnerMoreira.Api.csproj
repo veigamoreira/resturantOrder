@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crud.VagnerMoreira.Application\Crud.VagnerMoreira.Application.csproj" />
+    <ProjectReference Include="..\Crud.VagnerMoreira.Infra.CrossCutting.IoC\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj" />
+  </ItemGroup>
+
+ 
+
+
+</Project>

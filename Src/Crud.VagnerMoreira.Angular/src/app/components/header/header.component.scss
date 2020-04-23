@@ -1,0 +1,46 @@
+@import '../../../sass/variables';
+
+header {
+    nav {
+        font-size: $font-button;
+        background-color: $primario-base;
+        color: $branco;
+        height: $header-size;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    height: $header-size;
+    width: $header-size;
+}
+
+fa-icon {
+    color: $branco;
+}
+
+.nav-item {
+    a {
+        color: $branco;
+        &:hover {
+            color: $branco;
+        }
+        &:active {
+            color: $branco;
+        }
+    }
+}
+
+.nav-link {
+    height: 50px;
+    padding: {
+        left: 17px !important;
+        right: 13px !important;
+    }
+    border: {
+        left: 1px solid $branco-20;
+    }
+    display: flex;
+    align-items: center;
+}
