@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qE1OOM4KfNOEwARh+FY+syjZxkR89hyqRjAAtXGL0Uhfp0ll4FmWVqomoEVmFhIKdx/adiCOHf4b+bzP6whJQA==",
+  "dgSpecHash": "B6yLeeLskTx0AXemqmNgb+2fmgqb4J83ZncxkxbNrT4rZGiInKbigp2gNVnhj3fOb3OZ9K1zobcC41YOIAmZww==",
   "success": true,
-  "projectFilePath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj",
+  "projectFilePath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

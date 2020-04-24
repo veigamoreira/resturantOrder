@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj": {}
+    "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
+    "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
+        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
         "projectName": "Crud.VagnerMoreira.Application",
-        "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
+        "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
         "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-        "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\obj\\",
+        "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,8 +29,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
-                "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
+              "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
+                "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj": {
+    "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj",
+        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj",
         "projectName": "Crud.VagnerMoreira.Data.Dapper",
-        "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj",
+        "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj",
         "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-        "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\obj\\",
+        "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -93,8 +93,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
-                "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
+              "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
+                "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
+    "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj",
+        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj",
         "projectName": "Crud.VagnerMoreira.Domain",
-        "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj",
+        "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj",
         "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-        "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\obj\\",
+        "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -198,14 +198,14 @@
         }
       }
     },
-    "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj": {
+    "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj",
+        "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj",
         "projectName": "Crud.VagnerMoreira.UnitTest",
-        "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj",
+        "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj",
         "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-        "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.UnitTest\\obj\\",
+        "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -223,14 +223,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
-                "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj"
+              "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
+                "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj"
               },
-              "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj": {
-                "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj"
+              "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj": {
+                "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj"
               },
-              "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
-                "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
+              "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
+                "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
               }
             }
           }

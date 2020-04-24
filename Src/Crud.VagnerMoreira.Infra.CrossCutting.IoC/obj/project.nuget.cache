@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2xNraj64Lm38sIBBwI831RqKTYjJju9gEDRP1zt9ZKTqg5ZPnlwkmcHQVZd/TPtI2aghnfcMtOStL/KIuMliQQ==",
+  "dgSpecHash": "blTMMqVG9MmqSo3lSYbcbIeFF1XD1PvDfyZEZ1wuKpUz4N/3T6uLJtppsGU93unhoU66jeBb5xRsL2A6B1syNA==",
   "success": true,
-  "projectFilePath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj",
+  "projectFilePath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\222703\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\222703\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",

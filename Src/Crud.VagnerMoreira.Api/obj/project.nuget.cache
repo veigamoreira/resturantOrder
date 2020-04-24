@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VgvKI5N4MId9ixgAuTTtzmuqxI0RpEYk6bBWCdJqfVFVSCH876TWKuHREgey1Jy7+IIFSdsYKAI76Cv5qy9/Dg==",
+  "dgSpecHash": "w/iq/6rahim0VMArN4hkZudVtcRWClWi4LpPlRvvHSV5Gz3Jio5EoVv91RCTBsIOr5FQ/naA7MQgaYEA1Bjp3A==",
   "success": true,
-  "projectFilePath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Api\\Crud.VagnerMoreira.Api.csproj",
+  "projectFilePath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Api\\Crud.VagnerMoreira.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\222703\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\222703\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",

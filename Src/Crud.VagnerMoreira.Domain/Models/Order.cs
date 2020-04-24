@@ -4,5 +4,8 @@
     {
 
         public string OrderRequest { get; set; }
+
+        public string OrderResponse{ get; set; }
+
     }
 }

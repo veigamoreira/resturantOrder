@@ -816,11 +816,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
+      "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
       "projectName": "Crud.VagnerMoreira.Application",
-      "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
+      "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
       "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-      "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\obj\\",
+      "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -838,8 +838,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
-              "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
+            "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
+              "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
             }
           }
         }

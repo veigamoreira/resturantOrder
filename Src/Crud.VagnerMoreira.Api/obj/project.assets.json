@@ -6863,11 +6863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Api\\Crud.VagnerMoreira.Api.csproj",
+      "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Api\\Crud.VagnerMoreira.Api.csproj",
       "projectName": "Crud.VagnerMoreira.Api",
-      "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Api\\Crud.VagnerMoreira.Api.csproj",
+      "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Api\\Crud.VagnerMoreira.Api.csproj",
       "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-      "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Api\\obj\\",
+      "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6885,11 +6885,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
-              "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj"
+            "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
+              "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj"
             },
-            "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj": {
-              "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj"
+            "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj": {
+              "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj"
             }
           }
         }

@@ -1581,11 +1581,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj",
+      "projectUniqueName": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj",
       "projectName": "Crud.VagnerMoreira.Infra.CrossCutting.IoC",
-      "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj",
+      "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\Crud.VagnerMoreira.Infra.CrossCutting.IoC.csproj",
       "packagesPath": "C:\\Users\\222703\\.nuget\\packages\\",
-      "outputPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\obj\\",
+      "outputPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Infra.CrossCutting.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1603,14 +1603,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
-              "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj"
+            "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj": {
+              "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj"
             },
-            "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj": {
-              "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj"
+            "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj": {
+              "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj"
             },
-            "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
-              "projectPath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
+            "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj": {
+              "projectPath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Domain\\Crud.VagnerMoreira.Domain.csproj"
             }
           }
         }

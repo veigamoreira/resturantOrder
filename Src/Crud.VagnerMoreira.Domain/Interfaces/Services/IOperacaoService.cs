@@ -5,9 +5,7 @@ namespace Crud.VagnerMoreira.Domain.Interfaces.Services
 {
     public interface IOperacaoService
     {
-        ContaCorrente Adicionar(Lancamento request);
-
-        string Order(string order);
+        Order Order(string order);
 
 
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hcXOO7tzQLc4nKZ3KiJQ7OEVnZTprRiSc9tF7sRLjkHLcls1LXV87gwFjlgT3WaNZXFA08rg6add6yOFKboNMg==",
+  "dgSpecHash": "1hpJCd5H+GSsUaBJo/IWzC9V3KVzCWR5/5dwy3ksPLTtrtGsYuudGi7ea3Fo/9ZP6mKoGhjEUsOZ4qiGKwf5og==",
   "success": true,
-  "projectFilePath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
+  "projectFilePath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Application\\Crud.VagnerMoreira.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\222703\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

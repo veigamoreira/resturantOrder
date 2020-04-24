@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pNx/uHaONhj4V7DMYBGZJAhuH+XZOHAeehUt+UwwCufLRjp7nIDPCvwsFQ7SQktqJHR+Dtngs3TqgymlsavuNQ==",
+  "dgSpecHash": "GKlzQNnATHAjpCpcF2lL8nHN70S1H0N1iN25+vlDEzW41Tvds8B/TX+uRavDyKn6Y/NUXYOUdkAPQWyNiA1Vjg==",
   "success": true,
-  "projectFilePath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj",
+  "projectFilePath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.UnitTest\\Crud.VagnerMoreira.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\222703\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\222703\\.nuget\\packages\\bogus\\29.0.1\\bogus.29.0.1.nupkg.sha512",

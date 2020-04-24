@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9M0HyuXWd9DNd2eEg2SVQfZYhy75hpc23Jd6/ybabX59VW41u8zOzLtEAT2rHBfNUbcUG3wDZK1sj83CQvRzmg==",
+  "dgSpecHash": "+9h30W5vuQ46IATE9trbhJbbmtMkHtm+qLRWgPdRB9gUgerYfxl0iJdgZr1NhDQOa/tDi1PIMaRSdva8FVusiQ==",
   "success": true,
-  "projectFilePath": "C:\\teste\\Arquitetura.DDD-CC\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj",
+  "projectFilePath": "C:\\teste\\Arquitetura.DDD-Order\\Src\\Crud.VagnerMoreira.Data.Dapper\\Crud.VagnerMoreira.Data.Dapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\222703\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",
     "C:\\Users\\222703\\.nuget\\packages\\dapper.fluentmap\\1.8.0\\dapper.fluentmap.1.8.0.nupkg.sha512",

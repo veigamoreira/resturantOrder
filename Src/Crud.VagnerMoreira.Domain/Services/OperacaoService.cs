@@ -21,84 +21,58 @@ namespace Crud.VagnerMoreira.Domain.Services
             _OperacaoRepository = operacaoRepository;
         }
 
-        public ContaCorrente Adicionar(Lancamento request)
+        public Order Order(string order)
         {
-            // Crio o objeto de response
-            ContaCorrente contaCorrenteOrigem = new ContaCorrente();
-            ContaCorrente contaCorrenteDestino = new ContaCorrente();
-
-            // Validação de regras de negócio
-            _OperacaoValidacao.ValidarOperacao(request);
-            if (_OperacaoValidacao.Erros.Any())
+            try
             {
-                contaCorrenteOrigem.Erros = _OperacaoValidacao.Erros;
-                return contaCorrenteOrigem;
-            }
 
-            // Chama o Repositoy
-            contaCorrenteOrigem.NumeroConta = request.ContaOrigem;
-            contaCorrenteDestino.NumeroConta = request.ContaDestino;
-
-            var contaOrigem = _OperacaoRepository.Obter(contaCorrenteOrigem);
-            var contaDestino = _OperacaoRepository.Obter(contaCorrenteDestino);
-
-
-            _OperacaoValidacao.ValidarConta(contaOrigem);
-
-            if (_OperacaoValidacao.Erros.Any())
-            {
-                contaCorrenteOrigem.Erros = _OperacaoValidacao.Erros;
-                return contaCorrenteOrigem;
-            }
-
-            _OperacaoValidacao.ValidarSaldoConta(request.Valor, contaOrigem.Saldo);
-
-            if (_OperacaoValidacao.Erros.Any())
-            {
-                contaCorrenteOrigem.Erros = _OperacaoValidacao.Erros;
-                return contaCorrenteOrigem;
-            }
-
-
-            //Efetivando a transacao
-            _OperacaoRepository.Adicionar(request);
-
-            contaCorrenteDestino.Saldo = contaCorrenteDestino.Saldo + request.Valor;
-            contaCorrenteOrigem.Saldo = contaCorrenteOrigem.Saldo - request.Valor;
-
-            //debito e crédito
-            _OperacaoRepository.AtualizarConta(contaCorrenteDestino);
-            _OperacaoRepository.AtualizarConta(contaCorrenteOrigem);
-
-
-            // Retorna
-            return contaCorrenteOrigem;
-        }
-
-        public string Order(string order)
-        {
-            string retorno = string.Empty;
-            var orderArray = order.Split(",");
-            if (orderArray.Any())
-            {
-                //GetMorning Order
-                if (orderArray[0].ToLower().Trim() == "morning")
+                string retorno = string.Empty;
+                if (string.IsNullOrEmpty(order))
                 {
-                    return GetMorningOrder(orderArray);
-                }              
-                //GetNight Order
-                else if (orderArray[0].ToLower().Trim() == "night")
-                {
-                    return GetNigthOrder(orderArray);
+                    _OperacaoValidacao.NotifyErro();
+                    Order ret = new Order { Erros = _OperacaoValidacao.Erros };
+                    return ret;
                 }
-                // Nothing on first array position
+
+                var orderArray = order.Split(",");
+                if (orderArray.Any())
+                {
+                    //GetMorning Order
+                    if (orderArray[0].ToLower().Trim() == "morning")
+                    {
+                        return GetMorningOrder(orderArray);
+                    }
+                    //GetNight Order
+                    else if (orderArray[0].ToLower().Trim() == "night")
+                    {
+                        return GetNigthOrder(orderArray);
+                    }
+                    // Nothing on first array position
+                    else
+                    {
+                        _OperacaoValidacao.NotifyErro();
+                        Order ret = new Order { Erros = _OperacaoValidacao.Erros };
+                        return ret;
+
+                    }
+                }
                 else
-                    return retorno;
+                {
+                    _OperacaoValidacao.NotifyErro();
+                    Order ret = new Order { Erros = _OperacaoValidacao.Erros };
+                    return ret;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
             }
 
-            return string.Empty;
+
+            return null;
         }
-        private string GetMorningOrder(string[] orderArray)
+
+        private Order GetMorningOrder(string[] orderArray)
         {
             StringBuilder retorno = new StringBuilder();
             int[] dishesMorning = { (int)DysheType.entrée, (int)DysheType.side, (int)DysheType.drink };
@@ -147,10 +121,10 @@ namespace Crud.VagnerMoreira.Domain.Services
                 }
             }
 
-            return retorno.ToString();
+            return new Order() { OrderResponse = retorno.ToString() };
         }
 
-        private string GetNigthOrder(string[] orderArray)
+        private Order GetNigthOrder(string[] orderArray)
         {
             StringBuilder retorno = new StringBuilder();
             int[] dishesNight = { (int)DysheType.entrée, (int)DysheType.side, (int)DysheType.drink, (int)DysheType.dessert };
@@ -197,9 +171,7 @@ namespace Crud.VagnerMoreira.Domain.Services
                     retorno.Append("Error, ");
                 }
             }
-
-            return retorno.ToString();
-
+            return new Order() { OrderResponse = retorno.ToString() };
         }
     }
 }

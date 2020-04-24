@@ -19,7 +19,7 @@ using Xunit;
 
 namespace Crud.VagnerMoreira.UnitTest
 {
-    public class UsuarioUnitTest
+    public class OrderUnitTest
     {
         private readonly IServiceCollection _serviceCollection;
         private readonly ServiceProvider _services;
@@ -27,7 +27,7 @@ namespace Crud.VagnerMoreira.UnitTest
         private readonly Mock<IOperacaoRepository> _UsuarioRepositoryMock;
         private readonly Faker _faker;
 
-        public UsuarioUnitTest()
+        public OrderUnitTest()
         {
             // Faker
             _faker = new Faker();
@@ -49,38 +49,31 @@ namespace Crud.VagnerMoreira.UnitTest
         }
 
         [Fact]
-        public void DeveEfetuarUmLancamento()
+        public void DeveEfetuarUmaOrder()
         {
             _UsuarioAppService = _services.GetService<IOperacaoAppService>();
-            OperacaoRequest request = new OperacaoRequest
+            Order request = new Order
             {
-                ContaOrigem = _faker.Finance.Account(),
-                ContaDestino = _faker.Finance.Account(),
-                Valor = _faker.Finance.Amount()
+                OrderRequest = "morning, 1, 2, 3"
             };
 
-            var response = _UsuarioAppService.Order("");
+            var response = _UsuarioAppService.Order(request.OrderRequest);
 
-            //   Assert.Contains(response != "", "");
+           Assert.True(response.Erros == null || response.Erros.Count == 0);
         }
 
         [Fact]
-        public void Deve_Adicionar_Quando_Todos_Os_Campos_Estao_Preenchidos()
+        public void NãoDeveEfetuar()
         {
-            //    _UsuarioAppService = _services.GetService<IOperacaoAppService>();
-            //    OperacaoRequest request = new OperacaoRequest
-            //    {
 
-            //    };
+            _UsuarioAppService = _services.GetService<IOperacaoAppService>();
+            Order request = new Order
+            {
+            };
 
-            //    _UsuarioRepositoryMock.Setup(r => r.Adicionar(It.IsAny<Lancamento>())).Returns(_faker.Random.Number(1, 100));
-            //    UsuarioAdicionarResponse response = _UsuarioAppService.Adicionar(request);
+            var response = _UsuarioAppService.Order(request.OrderRequest);
 
-            //    Assert.True(response.Id > 0);
-            //    Assert.True(!response.Erros.Any());
-            //}
-
-            // TODO:: Incluir outros testes
+            Assert.True(response.Erros.Count > 0);
         }
     }
 }

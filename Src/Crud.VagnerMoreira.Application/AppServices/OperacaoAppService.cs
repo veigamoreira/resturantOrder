@@ -12,13 +12,13 @@ namespace Crud.VagnerMoreira.Application.AppServices
     public class OperacaoAppService : IOperacaoAppService
     {
         private readonly IMapper _mapper;
-        private readonly IOperacaoService _UsuarioService;
+        private readonly IOperacaoService _operacaoService;
         private readonly IUnitOfWork _unitOfWork;
 
         public OperacaoAppService(IMapper mapper, IOperacaoService OperacaoService, IUnitOfWork unitOfWork)
         {
             _mapper = mapper;
-            _UsuarioService = OperacaoService;
+            _operacaoService = OperacaoService;
             _unitOfWork = unitOfWork;
         }
 
@@ -31,12 +31,24 @@ namespace Crud.VagnerMoreira.Application.AppServices
                 //_unitOfWork.BeginTransaction();
 
                 // Faz o mapeamento para a model e chama a service
-                string order = request.ToString();
-                var responseModel = _UsuarioService.Order(order);
+                string order = request;
+                var responseModel = _operacaoService.Order(order);
 
+                if (responseModel.Erros != null && responseModel.Erros.Count > 0)
+                {
+                    OrderResponse response2 = new OrderResponse();
+                    response2.Erros = new List<ErroViewModel>();
+                    foreach (var item in responseModel.Erros)
+                    {
+                        response2.Erros.Add(new ErroViewModel { Descricao = item.Descricao, Codigo = item.Codigo });
+                    }
+
+                    return response2;
+                }
                 // Mapemento do response e retorna para a api
-                OrderResponse response = new OrderResponse() { order = responseModel.ToString() };
+                OrderResponse response = new OrderResponse() { order = responseModel.OrderResponse.ToString() };
                 return response;
+
             }
         }
 

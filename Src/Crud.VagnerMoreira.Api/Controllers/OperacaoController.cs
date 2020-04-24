@@ -1,8 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Net;
-using Crud.VagnerMoreira.Application.Interfaces;
+﻿using Crud.VagnerMoreira.Application.Interfaces;
 using Crud.VagnerMoreira.Application.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace Crud.VagnerMoreira.Api.Controllers
 {
@@ -11,11 +10,11 @@ namespace Crud.VagnerMoreira.Api.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IOperacaoAppService _OperacaoAppService;
+        private readonly IOperacaoAppService _OrderAppService;
 
-        public UsuarioController(IOperacaoAppService UsuarioAppService)
+        public UsuarioController(IOperacaoAppService OrderAppService)
         {
-            _OperacaoAppService = UsuarioAppService;
+            _OrderAppService = OrderAppService;
         }
 
         [HttpPost("order")]
@@ -23,8 +22,7 @@ namespace Crud.VagnerMoreira.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public IActionResult Order(OrderRequestViewModel order)
         {
-
-            var response = _OperacaoAppService.Order(order.Order);
+            var response = _OrderAppService.Order(order.Order);
             return Ok(response);
         }
     }
