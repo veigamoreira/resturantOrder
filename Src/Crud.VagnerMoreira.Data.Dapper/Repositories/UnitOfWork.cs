@@ -15,7 +15,7 @@ namespace Crud.VagnerMoreira.Data.Dapper.Repositories
         public UnitOfWork(IDbConnection connection)
         {
             Connection = connection;
-            Connection.Open();
+          //  Connection.Open();
         }
 
         public void BeginTransaction()

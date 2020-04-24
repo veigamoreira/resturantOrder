@@ -8,11 +8,7 @@ namespace Crud.VagnerMoreira.Application.AutoMapper
     {
         public ModelToViewModel()
         {
-            CreateMap<ContaCorrente, UsuarioAdicionarResponse>();
-            CreateMap<ContaCorrente, UsuarioEditarResponse>();
-            CreateMap<ContaCorrente, UsuarioDeletarResponse>();
-            CreateMap<ContaCorrente, UsuarioObterResponse>();
-            CreateMap<ContaCorrente, UsuarioListarResponse>();
+            CreateMap<Order, OrderResponse>();
             CreateMap<Erro, ErroViewModel>();
         }
     }

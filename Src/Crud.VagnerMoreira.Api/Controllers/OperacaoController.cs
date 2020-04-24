@@ -7,24 +7,25 @@ using Crud.VagnerMoreira.Application.ViewModels;
 namespace Crud.VagnerMoreira.Api.Controllers
 {
     // Obs: Sempre "retorno" um Ok e não uso try catch porque criei dois middlewares, um que faz o tratamento do response e o outro de erros (exceptions) da aplicação
-    [Route("api/Usuario")]
+    [Route("api/")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IOperacaoAppService _UsuarioAppService;
+        private readonly IOperacaoAppService _OperacaoAppService;
 
         public UsuarioController(IOperacaoAppService UsuarioAppService)
         {
-            _UsuarioAppService = UsuarioAppService;
+            _OperacaoAppService = UsuarioAppService;
         }
 
-        [HttpPost("adicionar")]
-        [ProducesResponseType(typeof(UsuarioAdicionarResponse), (int)HttpStatusCode.OK)]
+        [HttpPost("order")]
+        [ProducesResponseType(typeof(OrderResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public IActionResult Adicionar(OperacaoRequest request)
+        public IActionResult Order(OrderRequestViewModel order)
         {
-            UsuarioAdicionarResponse response = _UsuarioAppService.Adicionar(request);
+
+            var response = _OperacaoAppService.Order(order.Order);
             return Ok(response);
-        }      
+        }
     }
 }

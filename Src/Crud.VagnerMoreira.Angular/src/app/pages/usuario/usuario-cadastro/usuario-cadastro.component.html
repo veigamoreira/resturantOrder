@@ -1,0 +1,85 @@
+<div class="content-wrapper">
+  <section class="content-header">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a [routerLink]="['/']">Home</a>
+        </li>
+        <li class="breadcrumb-item active" *ngIf="this.id <= 0">Order</li>
+      </ol>
+    </nav>
+  </section>
+
+  <section class="conteudo-area">
+    <div class="row mb-4 mt-4">
+      <div class="col-12">
+        <h4>Order Request</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card w-100 p-3">
+          <form [formGroup]="formCadastro">
+         
+            <div class="row d-flex justify-content-center mt-4">
+
+              <div class="col-12">
+								<div class="input-container w-100">
+									<input id="Nome" name="Nome" class="input" type="text" autocomplete="off" formControlName="order">
+									<label class="label" for="Nome"><span>Order</span></label>
+								</div>
+              </div> <!-- ano -->
+
+           
+            </div> <!-- linha 2 -->
+
+           
+          </form>
+
+          <div class="row mt-5 text-right">
+            <div class="col-12">
+              <button id="btn_salvar" name="btn_salvar" class="btn-alta-enfase-verde pl-5 pr-5" (click)="salvar()"> Order </button>
+            </div>
+          </div> <!-- linha ação -->
+
+          <br>
+          <br>
+
+          <div class="col-12">
+            <table class="table table-striped text-left w-100">
+              <thead>
+                <tr class="table-header">
+                  <th>Order</th>                  
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr *ngFor="let usuario of usuarios">
+                  <td>{{ usuario.order }}</td>                       
+                </tr>
+
+                <tr *ngIf="!usuarios || usuarios.length == 0">
+                  <td colspan="6" class="text-center">No data found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Mensagem de erro -->
+          <div class="row mt-3">
+            <div class="col-12" *ngIf="erros">
+              <div class="alert alert-danger" role="alert">
+                <ul>
+                  <li *ngFor="let erro of erros">
+                    {{erro.descricao}}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,10 @@
+<app-header *ngIf="exibirTemplate"></app-header>
+<app-menu *ngIf="exibirTemplate"></app-menu>
+
+<div>
+  <section class="content-header"></section>
+
+  <section class="content" [class.menu-escondido]="compartilhadoService.ocultarMenu && exibirTemplate" [class.menu-aberto]="!compartilhadoService.ocultarMenu && exibirTemplate" [style.padding-top.px]="exibirTemplate ? '50' : '0'">
+    <router-outlet></router-outlet>
+  </section>
+</div>

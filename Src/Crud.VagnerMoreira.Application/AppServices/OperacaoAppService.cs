@@ -22,30 +22,20 @@ namespace Crud.VagnerMoreira.Application.AppServices
             _unitOfWork = unitOfWork;
         }
 
-        public UsuarioAdicionarResponse Adicionar(OperacaoRequest request)
+        public OrderResponse Order(string request)
         {
             // Criei o UnitOfWork para mostrar um controle de transação com o dapper quando for preciso
             using (_unitOfWork)
             {
                 // Inicia a transação
-                _unitOfWork.BeginTransaction();
+                //_unitOfWork.BeginTransaction();
 
                 // Faz o mapeamento para a model e chama a service
-                Lancamento lancamento = new Lancamento() { ContaDestino = request.ContaDestino, ContaOrigem = request.ContaOrigem, Valor = request.Valor };
-                ContaCorrente responseModel = _UsuarioService.Adicionar(lancamento);
-
-                // Commit ou RollBack
-                if (responseModel.Erros != null && responseModel.Erros.Any())
-                {
-                    _unitOfWork.RollBack();
-                }
-                else
-                {
-                    _unitOfWork.CommitTransaction();
-                }
+                string order = request.ToString();
+                var responseModel = _UsuarioService.Order(order);
 
                 // Mapemento do response e retorna para a api
-                UsuarioAdicionarResponse response = _mapper.Map<UsuarioAdicionarResponse>(responseModel);
+                OrderResponse response = new OrderResponse() { order = responseModel.ToString() };
                 return response;
             }
         }
